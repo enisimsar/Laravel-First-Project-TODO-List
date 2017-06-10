@@ -6,19 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
-  public function isDone()
-  {
-    if($this->isdone){
-      return true;
-    }
-    else{
-      return false;
-    }
 
+  public static function getById($id){
+    return static::where('id', (integer) $id)->first();
   }
 
-  public static function incomplete()
+  public static function getLatest()
   {
-    return static::where('isdone', 0)->get();
+    return static::latest()->get();
   }
+
 }

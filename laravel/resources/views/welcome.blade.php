@@ -59,6 +59,16 @@
                 text-transform: uppercase;
             }
 
+            a {
+                color: #636b6f;
+                padding: 10px 25px;
+                font-size: 32px;
+                font-weight: bold;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -82,13 +92,14 @@
                     Laravel
                 </div>
 
-                <div class="links">
+                <div class="links" style="margin-bottom:25px">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <a href="/tasks"><strong>>>Go TODO List<<</strong></a>
             </div>
         </div>
     </body>

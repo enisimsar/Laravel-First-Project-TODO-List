@@ -15,14 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    return view('test');
-});
-
-Route::get('/test2', 'TestController@getBrand');
-
-Route::get('/test1', 'TestController@getView');
-
 Route::get('/tasks', 'TestController@getTasks');
 
 Route::post('/addTask', 'TestController@addTask');
