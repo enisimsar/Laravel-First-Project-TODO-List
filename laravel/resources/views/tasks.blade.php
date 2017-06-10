@@ -16,7 +16,8 @@
   <body>
   <div class="container">
     <h2><strong>TODO List</strong></h2>
-
+    <iframe style="text-align:center" src="https://ghbtns.com/github-btn.html?user=enisimsar&repo=Laravel-First-Project-TODO-List&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    
     <hr>
 
     <form style="text-align:center" method="POST" action="/addTask" class="form-inline">
@@ -27,7 +28,6 @@
       <input style="width:245px" type="text" class="form-control" id="task" name="task" placeholder="Give a star this project on GitHub :)">
 
       <button type="submit" class="btn btn-primary">Add</button>
-
     </form>
     <hr>
     <table class="table">
