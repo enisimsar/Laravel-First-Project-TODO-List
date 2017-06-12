@@ -25,7 +25,7 @@ services:
             - "DB_PORT=27017"
             - "DB_HOST=database"
     database:
-	container_name: todo_list_database
+        container_name: todo_list_database
         image: mongo:latest
         volumes: 
             - ./data/db:/data/db
