@@ -8,7 +8,7 @@ services:
         volumes:
             - ./laravel:/var/www
         ports:
-            - "8080:80"
+            - "80:80"
         links:
             - app
     app:
@@ -20,12 +20,9 @@ services:
             - ./laravel:/var/www
         links:
             - database
-            - cache
         environment:
             - "DB_PORT=3306"
             - "DB_HOST=database"
-            - "REDIS_PORT=6379"
-            - "REDIS_HOST=cache"
     database:
         container_name: todo_list_mysql
         image: mysql:5.6
@@ -34,8 +31,4 @@ services:
             - "MYSQL_DATABASE=dockerApp"
         ports:
             - "33061:3306"
-    cache:
-        container_name: todo_list_redis
-        image: redis:3.0
-        ports:
-            - "63791:6379"
+
