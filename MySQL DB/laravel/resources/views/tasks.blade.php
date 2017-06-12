@@ -30,6 +30,7 @@
       <button type="submit" class="btn btn-primary">Add</button>
     </form>
     <hr>
+    
     <table class="table">
       <thead>
         <tr>
