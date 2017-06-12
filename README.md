@@ -1,11 +1,11 @@
 ## Laravel First Project TODO List
 
-This project is a simple TODO List in php laravel framework. This includes MySQL and Laravel Framework. Laravel folder obtains from [this project](https://github.com/laravel/laravel)
+This project is a simple TODO List in php laravel framework. This includes MySQL, MongoDB and Laravel Framework. "laravel" folder is obtained from [this project](https://github.com/laravel/laravel)
 
  ### Requirements
  - [Docker](https://docs.docker.com/)
 
- ### Install w/ MySQL
+ ### Install w/ MySQL DB
 - `$ sudo docker-compose up -d` Installs MySQL, php and Laravel Framework to docker.
 - `$ docker-compose build`
 - `$ sudo docker exec -it todo_list_app bash` Connects the docker.
@@ -16,7 +16,7 @@ This project is a simple TODO List in php laravel framework. This includes MySQL
 - `$ php artisan migrate:refresh` Creates the tasks table.
 
 
- ### Install w/ Mongo
+ ### Install w/ MongoDB
 - `$ sudo docker-compose up -d` Installs MongoDB, php and Laravel Framework to docker.
 - `$ docker-compose build`
 - `$ sudo docker exec -it todo_list_app bash` Connects the docker.
